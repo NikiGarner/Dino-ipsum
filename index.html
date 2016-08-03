@@ -2,11 +2,25 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title></title>
   </head>
   <body>
+    <form class="dino" action="index.html" method="post">
+      <input id="paragraphs" type="number" name="numberOfParagraphs" value="" placeholder="Number of Paragraphs" required>
+      <input id="words" type="number" name="wordsPerParagraphs" value="" placeholder="Words per Paragraphs" required>
+      <select class="type" name="type">
+        <option value="0" selected>Choose an output format</option>
+        <option value="html">HTML</option>
+        <option value="text">Text</option>
+        <option value="json">Json</option>
+      </select>
+      <button type="submit" name="submit">Give me dinos</button>
+    </form>
+    <div id="output">
 
+    </div>
   </body>
 </html>
